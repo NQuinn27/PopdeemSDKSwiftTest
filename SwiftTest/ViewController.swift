@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import PopdeemSDK
 
-class ViewController: UIViewController {
+class ViewController: PDUIHomeViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

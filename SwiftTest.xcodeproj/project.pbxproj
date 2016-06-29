@@ -12,6 +12,9 @@
 		39735BB11D23D5F40008301E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39735BAF1D23D5F40008301E /* Main.storyboard */; };
 		39735BB31D23D5F40008301E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39735BB21D23D5F40008301E /* Assets.xcassets */; };
 		39735BB61D23D5F40008301E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39735BB41D23D5F40008301E /* LaunchScreen.storyboard */; };
+		39735BBE1D23D60F0008301E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 39735BBD1D23D60F0008301E /* Podfile */; };
+		39735BC41D23DC5F0008301E /* theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 39735BC31D23DC5F0008301E /* theme.json */; };
+		7DF7C19936CD08967AF41ECB /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E6888270C1C22218BE74AF /* Pods_SwiftTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,12 @@
 		39735BB21D23D5F40008301E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39735BB51D23D5F40008301E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39735BB71D23D5F40008301E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39735BBD1D23D60F0008301E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		39735BBF1D23DA450008301E /* SwiftTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		39735BC31D23DC5F0008301E /* theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = theme.json; sourceTree = "<group>"; };
+		83FAA01A5F7F5C1563605137 /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		DC3E7359F06F405B7EA4A8A7 /* Pods-SwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F0E6888270C1C22218BE74AF /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF7C19936CD08967AF41ECB /* Pods_SwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +48,11 @@
 		39735B9F1D23D5F40008301E = {
 			isa = PBXGroup;
 			children = (
+				39735BBD1D23D60F0008301E /* Podfile */,
 				39735BAA1D23D5F40008301E /* SwiftTest */,
 				39735BA91D23D5F40008301E /* Products */,
+				701E090B10FADECCA9C8EE7E /* Pods */,
+				F8716F0F61CB6D50EB823D69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +73,27 @@
 				39735BB21D23D5F40008301E /* Assets.xcassets */,
 				39735BB41D23D5F40008301E /* LaunchScreen.storyboard */,
 				39735BB71D23D5F40008301E /* Info.plist */,
+				39735BBF1D23DA450008301E /* SwiftTest-Bridging-Header.h */,
+				39735BC31D23DC5F0008301E /* theme.json */,
 			);
 			path = SwiftTest;
+			sourceTree = "<group>";
+		};
+		701E090B10FADECCA9C8EE7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC3E7359F06F405B7EA4A8A7 /* Pods-SwiftTest.debug.xcconfig */,
+				83FAA01A5F7F5C1563605137 /* Pods-SwiftTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8716F0F61CB6D50EB823D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0E6888270C1C22218BE74AF /* Pods_SwiftTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39735BBA1D23D5F40008301E /* Build configuration list for PBXNativeTarget "SwiftTest" */;
 			buildPhases = (
+				23413A78F125B0A98869B544 /* Check Pods Manifest.lock */,
 				39735BA41D23D5F40008301E /* Sources */,
 				39735BA51D23D5F40008301E /* Frameworks */,
 				39735BA61D23D5F40008301E /* Resources */,
+				041E867845798D1B233407C6 /* Embed Pods Frameworks */,
+				786A40EAF8861079A066699A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,13 +157,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39735BC41D23DC5F0008301E /* theme.json in Resources */,
 				39735BB61D23D5F40008301E /* LaunchScreen.storyboard in Resources */,
 				39735BB31D23D5F40008301E /* Assets.xcassets in Resources */,
+				39735BBE1D23D60F0008301E /* Podfile in Resources */,
 				39735BB11D23D5F40008301E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		041E867845798D1B233407C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23413A78F125B0A98869B544 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		786A40EAF8861079A066699A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39735BA41D23D5F40008301E /* Sources */ = {
@@ -247,23 +332,30 @@
 		};
 		39735BBB1D23D5F40008301E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3E7359F06F405B7EA4A8A7 /* Pods-SwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Popdeem.SwiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/SwiftTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		39735BBC1D23D5F40008301E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FAA01A5F7F5C1563605137 /* Pods-SwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Popdeem.SwiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/SwiftTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +378,7 @@
 				39735BBC1D23D5F40008301E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

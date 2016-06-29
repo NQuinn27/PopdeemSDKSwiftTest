@@ -1,0 +1,50 @@
+PODS:
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.7.0)
+  - FBSDKCoreKit (4.13.1):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.13.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.13.1):
+    - FBSDKCoreKit
+  - PopdeemSDK (1.0.7):
+    - PopdeemSDK/Core (= 1.0.7)
+  - PopdeemSDK/Core (1.0.7):
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - PopdeemSDK/NoArc
+    - STTwitter
+  - PopdeemSDK/NoArc (1.0.7)
+  - PopdeemSDK/UIKit (1.0.7):
+    - PopdeemSDK/Core
+  - STTwitter (0.2.5)
+
+DEPENDENCIES:
+  - PopdeemSDK (from `git@github.com:Popdeem/Popdeem-SDK-iOS.git`, branch `Instagram`)
+  - PopdeemSDK/UIKit (from `git@github.com:Popdeem/Popdeem-SDK-iOS.git`, branch `Instagram`)
+
+EXTERNAL SOURCES:
+  PopdeemSDK:
+    :branch: Instagram
+    :git: git@github.com:Popdeem/Popdeem-SDK-iOS.git
+
+CHECKOUT OPTIONS:
+  PopdeemSDK:
+    :commit: 8363babd066215bed740f72dcc85b47aa9c49c84
+    :git: git@github.com:Popdeem/Popdeem-SDK-iOS.git
+
+SPEC CHECKSUMS:
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  FBSDKCoreKit: 2807fe0da2ddb49a1469da6d6ff597f99912980f
+  FBSDKLoginKit: 6d350cb6a22d6956e9d078885de6ee8a0ebc51b4
+  FBSDKShareKit: c9438df7573b33780ac8c3451201c5ebb260ffca
+  PopdeemSDK: addfda0c0ae4941e05d84e1409dfc5f338686eb1
+  STTwitter: 5c157e8dcb4f0e4cf5b4374393021b7d7b7fd497
+
+COCOAPODS: 0.39.0
