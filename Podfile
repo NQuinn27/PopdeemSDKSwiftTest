@@ -5,6 +5,6 @@ use_frameworks!
 link_with 'SwiftTest'
 
 target 'SwiftTest' do
-  pod 'PopdeemSDK', :git=> 'git@github.com:Popdeem/Popdeem-SDK-iOS.git', :branch => 'Instagram'
-	pod 'PopdeemSDK/UIKit', :git=> 'git@github.com:Popdeem/Popdeem-SDK-iOS.git', :branch => 'Instagram'
+  pod 'PopdeemSDK', :git=> 'https://github.com/Popdeem/Popdeem-SDK-iOS.git', :branch => 'Instagram'
+	pod 'PopdeemSDK/UIKit', :git=> 'https://github.com/Popdeem/Popdeem-SDK-iOS.git', :branch => 'Instagram'
 end
